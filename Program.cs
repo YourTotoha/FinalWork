@@ -14,5 +14,15 @@ void FilterArrayByLength(string[] sourceArray, string[] filteredArray)
     }
 }
 
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+
+
 FilterArrayByLength(sourceArray, filteredArray);
 PrintArray(filteredArray);
