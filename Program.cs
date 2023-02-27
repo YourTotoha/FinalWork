@@ -1,28 +1,28 @@
-﻿string[] sourceArray = new string[5] {"Kazan", "Ork", "World", "Soul", "res"};
-string[] filteredArray = new string[sourceArray.Length];
+﻿string[] SourceArray = new string[5] {"Kazan", "Ork", "World", "Soul", "res"};
+string[] FilteredArray = new string[SourceArray.Length];
 
-void FilterArrayByLength(string[] sourceArray, string[] filteredArray)
+void FilterArrayByLength(string[] SourceArray, string[] filteredArray)
 {
     int count = 0;
-    for (int i = 0; i < sourceArray.Length; i++)
+    for (int i = 0; i < SourceArray.Length; i++)
     {
-        if (sourceArray[i].Length <= 3)
+        if (SourceArray[i].Length <= 3)
         {
-            filteredArray[count] = sourceArray[i];
+            filteredArray[count] = SourceArray[i];
             count++;
         }
     }
 }
 
-void PrintArray(string[] array)
+void PrintArray(string[] Array)
 {
-    for (int i = 0; i < array.Length; i++)
+    for (int i = 0; i < Array.Length; i++)
     {
-        Console.Write($"{array[i]} ");
+        Console.Write($"{Array[i]} ");
     }
     Console.WriteLine();
 }
 
 
-FilterArrayByLength(sourceArray, filteredArray);
-PrintArray(filteredArray);
+FilterArrayByLength(SourceArray, FilteredArray);
+PrintArray(FilteredArray);
